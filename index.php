@@ -45,7 +45,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.php" class="logo">
-                            <img src="images/logo.png" align="klassy cafe html template">
+                            <img src="images/logo.PNG" align="klassy cafe html template">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
