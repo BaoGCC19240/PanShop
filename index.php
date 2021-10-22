@@ -57,8 +57,10 @@
                             <li><a href="?page=collective">Collective</a></li>
                             <li><a href="?page=contact">Contact Us</a></li>
                             <?php
-                            if($_SESSION['admin']==1)
+                            if(!isset($_SESSION['admin']) || $_SESSION['admin']==0)
                             {
+                            }
+                            else{
                             ?>
                             <li class="submenu">
                                 <a href="javascript:;">Management</a>
@@ -71,9 +73,6 @@
                             <?php
                             }
                             ?>
-                            
-                            
-                            
                             <?php
                             if(isset($_SESSION['us'])&&$_SESSION['us']!="")
                             {
