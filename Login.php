@@ -24,7 +24,7 @@ if(isset($_POST['btnLogin'])){
         $sq = "Select Username, Password, state from customer where Username='$us' and Password='$pass'";
         $res= pg_query($sq) or die(pg_error());
         $check = pg_num_rows($res);
-        $row = pg_fetch_array($sq)
+        $row = pg_fetch_row($sq);
         if($check==1)
         {
             $_SESSION["us"]=$us;
