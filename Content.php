@@ -64,7 +64,7 @@
                         <?php
                             include_once('connection.php');
 		  				   	$result = pg_query($conn, "SELECT * FROM product" );
-                            while($row = pg_fetch_array($result,null,PGSQL_ASSOC)){
+                            while($row = pg_fetch_array($result,NULL,PGSQL_ASSOC)){
 				        ?>
                 <div class="col-lg-4">
                     <div class="chef-item">
