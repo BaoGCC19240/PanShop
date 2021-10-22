@@ -21,8 +21,8 @@ if(isset($_POST['btnLogin'])){
         include_once("connection.php");
         $us=pg_real_escape_string($conn,$us);
         $pass=md5("$pa");
-        $sq="Select Username, Password, state from public.customer where Username='$us' and Password=MD5('" .$pass. "')";
-        $res= pg_query($conn,$sq) or die(pg_error());
+        $sq = "Select Username, Password, state from public.customer where Username='$us' and Password=MD5('" .$pass. "')";
+        $res= pg_query($sq) or die(pg_error());
         $check = pg_num_rows($res);
         if($check==1)
         {
