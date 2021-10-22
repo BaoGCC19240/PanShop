@@ -28,7 +28,7 @@ if(isset($_POST['btnLogin'])){
         if($check==1)
         {
             $_SESSION["us"]=$us;
-            $_SESSION["admin"]=$row['state'];
+            $_SESSION["admin"]=$row[2];
             echo '<meta http-equiv="refresh" content="0;URL=index.php"/>';
 
         }
