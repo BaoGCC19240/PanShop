@@ -64,13 +64,7 @@
                         <?php
                             include_once('connection.php');
 		  				   	$result = pg_query($conn, "SELECT * FROM product" );
-			
-			                if (!$result) { //add this check.
-                                die('Invalid query: ' . pg_error());
-                            }
-		
-                            
-                            while($row = pg_fetch_assoc($result)){
+                            while($row = pg_fetch_array($result,null,PGSQL_ASSOC)){
 				        ?>
                 <div class="col-lg-4">
                     <div class="chef-item">
