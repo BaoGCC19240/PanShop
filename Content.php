@@ -45,7 +45,7 @@
     </div>
     <!-- ***** Main Banner Area End ***** -->
 
-
+    <h1>CO SAN PHAM O DAY</h1>
 
 
 
@@ -63,7 +63,7 @@
             <div class="row">
                         <?php
                             include_once('connection.php');
-		  				   	$result = pg_query($conn, "SELECT * FROM public.product" );
+		  				   	$result = pg_query($conn, "SELECT * FROM product" );
 			
 			                if (!$result) { //add this check.
                                 die('Invalid query: ' . pg_error());
