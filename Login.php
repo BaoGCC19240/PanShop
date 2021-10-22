@@ -23,7 +23,8 @@ if(isset($_POST['btnLogin'])){
         $pass=md5("$pa");
         $sq="Select Username, Password, state from public.customer where Username='$us' and Password=MD5('" .$pass. "')";
         $res= pg_query($conn,$sq) or die(pg_error());
-        if(pg_num_rows($res)==1)
+        $check = pg_num_rows($res);
+        if($check==1)
         {
             $_SESSION["us"]=$us;
             $_SESSION["admin"]=$row['state'];
