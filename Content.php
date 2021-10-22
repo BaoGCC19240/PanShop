@@ -63,14 +63,14 @@
             <div class="row">
                         <?php
                             include_once('connection.php');
-		  				   	$result = mysqli_query($conn, "SELECT * FROM product" );
+		  				   	$result = pg_query($conn, "SELECT * FROM public.product" );
 			
 			                if (!$result) { //add this check.
-                                die('Invalid query: ' . mysqli_error($conn));
+                                die('Invalid query: ' . pg_error());
                             }
 		
                             
-                            while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+                            while($row = pg_fetch_array($result, null, PGSQL_ASSOC)){
 				        ?>
                 <div class="col-lg-4">
                     <div class="chef-item">
