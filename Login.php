@@ -19,9 +19,9 @@ if(isset($_POST['btnLogin'])){
    }
     else{
         include_once("connection.php");
-        $us=pg_escape_string($conn,$us);
+        $us=pg_escape_string($us);
         $pass=md5("$pa");
-        $sq = "Select Username, Password, state from public.customer where Username='$us' and Password=MD5('" .$pass. "')";
+        $sq = "Select Username, Password, state from customer where Username='$us' and Password=MD5('" .$pass. "')";
         $res= pg_query($sq) or die(pg_error());
         $check = pg_num_rows($res);
         if($check==1)
@@ -29,6 +29,7 @@ if(isset($_POST['btnLogin'])){
             $_SESSION["us"]=$us;
             $_SESSION["admin"]=$row['state'];
             echo '<meta http-equiv="refresh" content="0;URL=index.php"/>';
+
         }
         else
         {
