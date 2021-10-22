@@ -22,8 +22,8 @@ if(isset($_POST['btnLogin'])){
         $us=pg_real_escape_string($conn,$us);
         $pass=md5("$pa");
         $sq="Select Username, Password, state from public.customer where Username='$us' and Password='$pass'";
-        $res= pg_query($conn,$sq) or die(pg_error($conn));
-        $row=pg_fetch_array($res,pg_ASSOC);
+        $res= pg_query($conn,$sq) or die(pg_error());
+        $row=pg_fetch_array($res,pg_ASSO);
         if(pg_num_rows($res)==1)
         {
             $_SESSION["us"]=$us;
