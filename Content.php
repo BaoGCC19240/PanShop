@@ -70,7 +70,7 @@
                             }
 		
                             
-                            while($row = pg_fetch_array($result, 1, PGSQL_ASSOC)){
+                            while($row = pg_fetch_assoc($result)){
 				        ?>
                 <div class="col-lg-4">
                     <div class="chef-item">
