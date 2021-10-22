@@ -57,7 +57,7 @@
                             <li><a href="?page=collective">Collective</a></li>
                             <li><a href="?page=contact">Contact Us</a></li>
                             <?php
-                            if(!isset($_SESSION['admin']) or $_SESSION['admin']==1)
+                            if(isset($_SESSION['admin']) or $_SESSION['admin']==1)
                             {
                             }
                             else{
