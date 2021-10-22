@@ -57,7 +57,7 @@
                             <li><a href="?page=collective">Collective</a></li>
                             <li><a href="?page=contact">Contact Us</a></li>
                             <?php
-                            if(isset($_SESSION['admin']) && $_SESSION['admin']==1)
+                            if($_SESSION['admin']==1)
                             {
                             ?>
                             <li class="submenu">
