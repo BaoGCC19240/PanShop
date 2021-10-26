@@ -784,7 +784,7 @@ banner
 
 /* ==== Main CSS === */
 
-.img-fill {
+#img-fill {
     width: 100%;
     display: block;
     overflow: hidden;
@@ -792,7 +792,7 @@ banner
     text-align: center
 }
 
-.img-fill img {
+#img-fill img {
     min-height: 100%;
     min-width: 100%;
     position: relative;
@@ -830,18 +830,18 @@ banner
 
 /* ==== Slider Style === */
 
-.Modern-Slider .item .img-fill {
+#Modern-Slider #item #img-fill {
     height: 100%;
     max-height: 700px;
     background: #000;
 }
 
-.Modern-Slider .item .info>div {
+#Modern-Slider #item .info>div {
     display: inline-block!important;
     vertical-align: middle;
 }
 
-.Modern-Slider .NextArrow {
+#Modern-Slider .NextArrow {
     position: absolute;
     top: 50%;
     transform: translateY(-25px);
@@ -862,15 +862,15 @@ banner
     transition: all .3s;
 }
 
-.Modern-Slider .NextArrow:hover {
+#Modern-Slider .NextArrow:hover {
     opacity: 1;
 }
 
-.Modern-Slider .NextArrow:before {
+#Modern-Slider .NextArrow:before {
     content: '\f105';
 }
 
-.Modern-Slider .PrevArrow {
+#Modern-Slider .PrevArrow {
     position: absolute;
     top: 50%;
     transform: translateY(-25px);
@@ -891,11 +891,11 @@ banner
     transition: all .3s;
 }
 
-.Modern-Slider .PrevArrow:hover {
+#Modern-Slider .PrevArrow:hover {
     opacity: 1;
 }
 
-.Modern-Slider .PrevArrow:before {
+#Modern-Slider .PrevArrow:before {
     content: '\f104';
 }
 
@@ -903,15 +903,15 @@ ul.slick-dots {
     display: none!important;
 }
 
-.Modern-Slider .item.slick-active {
+#Modern-Slider #item.slick-active {
     animation: Slick-FastSwipeIn 1s both;
 }
 
-.Modern-Slider .buttons {
+#Modern-Slider .buttons {
     position: relative;
 }
 
-.Modern-Slider {
+#Modern-Slider {
     background: #000;
 }
 

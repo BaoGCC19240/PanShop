@@ -24,24 +24,24 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="main-banner header-text">
-                        <div class="Modern-Slider">
+                        <div id="Modern-Slider">
                             <!-- Item -->
-                            <div class="item">
-                                <div class="img-fill">
+                            <div id="item">
+                                <div id="img-fill">
                                     <img src="image/aquafish.jpg" alt="">
                                 </div>
                             </div>
                             <!-- // Item -->
                             <!-- Item -->
-                            <div class="item">
-                                <div class="img-fill">
+                            <div id="item">
+                                <div id="img-fill">
                                     <img src="image/dragonfish.PNG" alt="">
                                 </div>
                             </div>
                             <!-- // Item -->
                             <!-- Item -->
-                            <div class="item">
-                                <div class="img-fill">
+                            <div id="item">
+                                <div id="img-fill">
                                     <img src="image/koifish.jpg" alt="">
                                 </div>
                             </div>
