@@ -19,7 +19,7 @@ https://templatemo.com/tm-558-klassy-cafe
 
 -->
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
