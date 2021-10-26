@@ -20,11 +20,11 @@
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
-    <link rel="stylesheet" href="css/templatemo-klassy-cafe.css">
+    <link rel="stylesheet" type="text/css" href="css/templatemo-klassy-cafe.css">
 
-    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
 
-    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 
 </head>
 
