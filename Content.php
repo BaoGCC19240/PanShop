@@ -1,12 +1,3 @@
- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-
-    <link rel="stylesheet" type="text/css" href="css/templatemo-klassy-cafe.css">
-
-    <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
-
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 <!-- ***** Main Banner Area Start ***** -->
 <div id="top">
         <div class="container-fluid">
@@ -24,24 +15,24 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="main-banner header-text">
-                        <div id="Modern-Slider">
+                        <div class="Modern-Slider">
                             <!-- Item -->
-                            <div id="item">
-                                <div id="img-fill">
+                            <div class="item">
+                                <div class="img-fill">
                                     <img src="image/aquafish.jpg" alt="">
                                 </div>
                             </div>
                             <!-- // Item -->
                             <!-- Item -->
-                            <div id="item">
-                                <div id="img-fill">
+                            <div class="item">
+                                <div class="img-fill">
                                     <img src="image/dragonfish.PNG" alt="">
                                 </div>
                             </div>
                             <!-- // Item -->
                             <!-- Item -->
-                            <div id="item">
-                                <div id="img-fill">
+                            <div class="item">
+                                <div class="img-fill">
                                     <img src="image/koifish.jpg" alt="">
                                 </div>
                             </div>
@@ -54,7 +45,7 @@
     </div>
     <!-- ***** Main Banner Area End ***** -->
 
-    <h1>CO SAN PHAM O DAY</h1>
+
 
 
 
@@ -72,8 +63,14 @@
             <div class="row">
                         <?php
                             include_once('connection.php');
-		  				   	$result = pg_query($conn, "SELECT * FROM product" );
-                            while($row = pg_fetch_array($result,NULL,PGSQL_ASSOC)){
+		  				   	$result = mysqli_query($conn, "SELECT * FROM product" );
+			
+			                if (!$result) { //add this check.
+                                die('Invalid query: ' . mysqli_error($conn));
+                            }
+		
+                            
+                            while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 				        ?>
                 <div class="col-lg-4">
                     <div class="chef-item">

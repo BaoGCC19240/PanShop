@@ -13,6 +13,9 @@
     <title>PanShop</title>
     <!--
     
+TemplateMo 558 Klassy Cafe
+
+https://templatemo.com/tm-558-klassy-cafe
 
 -->
     <!-- Additional CSS Files -->
@@ -20,11 +23,11 @@
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
-    <link rel="stylesheet" type="text/css" href="css/templatemo-klassy-cafe.css">
+    <link rel="stylesheet" href="css/templatemo-klassy-cafe.css">
 
-    <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
 
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
 </head>
 
@@ -45,7 +48,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.php" class="logo">
-                            <img src="images/logo.PNG" align="klassy cafe html template">
+                            <img src="images/logo.png" align="klassy cafe html template">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -57,7 +60,7 @@
                             <li><a href="?page=collective">Collective</a></li>
                             <li><a href="?page=contact">Contact Us</a></li>
                             <?php
-                            if(!isset($_SESSION['admin']) || $_SESSION['admin']==0)
+                            if(!isset($_SESSION['admin']) or $_SESSION['admin']==0)
                             {
                             }
                             else{
