@@ -1,3 +1,12 @@
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/templatemo-klassy-cafe.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 <!-- ***** Main Banner Area Start ***** -->
 <div id="top">
         <div class="container-fluid">
